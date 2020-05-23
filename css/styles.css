@@ -1,6 +1,12 @@
 :root {
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -33,7 +39,7 @@ body {
 .hero-img {
   border-radius: 50%;
   border: 2px solid var(--pine);
-  box-shadow: 8px 16px 32px 0px var(--shadow);
+  /* box-shadow: 8px 16px 32px 0px var(--shadow); */
   height: 300px;
   margin-bottom: 32px;
   overflow: hidden;
@@ -42,6 +48,7 @@ body {
 
 img {
   max-height: 100%;
+  display: block;
 }
 
 h1 {
@@ -63,12 +70,15 @@ h2 {
 }
 
 .logos li {
+  list-style: none;
   display: block;
   margin-bottom: 8px;
 }
 
 
-
+a:visited {
+  color: white;
+}
 
 
 
