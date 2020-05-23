@@ -1,5 +1,6 @@
 :root {
-}
+  --shadow: rgba(0, 0, 0, 0.75);
+}  
 
 *,
 *::before,
@@ -28,6 +29,12 @@ body {
   line-height: 1.5;
 }
 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/**** Now PRO ****/
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -39,7 +46,7 @@ body {
 .hero-img {
   border-radius: 50%;
   border: 2px solid var(--pine);
-  /* box-shadow: 8px 16px 32px 0px var(--shadow); */
+  box-shadow: 8px 16px 32px 0px var(--shadow);
   height: 300px;
   margin-bottom: 32px;
   overflow: hidden;
@@ -47,8 +54,8 @@ body {
 }
 
 img {
-  max-height: 100%;
   display: block;
+  max-height: 100%;
 }
 
 h1 {
@@ -64,14 +71,18 @@ h2 {
   width: 80%;
 }
 
-.logos ul {
+.hero ul {
   padding: 0;
   text-align: center;
 }
 
-.logos li {
+.hero li {
   display: block;
   margin-bottom: 8px;
+}
+
+a {
+  color: white;
 }
 
 
