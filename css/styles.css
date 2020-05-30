@@ -1,5 +1,6 @@
 :root {
   --shadow: rgba(0, 0, 0, 0.75);
+  --montserrat: "Montserrat", sans-serif;
 }  
 
 *,
@@ -40,7 +41,7 @@ a:not([class]) {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 14px;
 }
 
 .hero-img {
@@ -69,6 +70,9 @@ h2 {
   margin-top: 16px;
   text-align: center;
   width: 80%;
+
+  font-size: 16px;
+  font-family: var(--montserrat);
 }
 
 .hero ul {
