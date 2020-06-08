@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
+
 :root {
   --shadow: rgba(0, 0, 0, 0.75);
-  --montserrat: "Montserrat", sans-serif;
+  --saria: 'Saira', sans-serif;
 }  
 
 *,
@@ -20,14 +22,14 @@ li {
 }
 
 body {
-  font-family: 'lato',sans-serif;
-  background-image: linear-gradient(#851835, #851835, #000000, #000000);
+  font-family: var(--saria);
+  background: linear-gradient(#851835, #851835, #000000, #000000);
   color: white;
 
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 a:not([class]) {
@@ -60,23 +62,23 @@ img {
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 2.5em;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
-h2 {
-  margin-top: 16px;
+p {
+  font-size: 1.125em;
+  margin-top: 20px;
   text-align: center;
   width: 80%;
 
-  font-size: 16px;
-  font-family: var(--montserrat);
 }
 
 .hero ul {
   padding: 0;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -88,6 +90,9 @@ h2 {
 a {
   color: white;
   text-decoration:none;
+
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 
@@ -111,7 +116,7 @@ a:visited {
     width: 582px;
   }
 
-  h2 {
+  p {
     width: 582px;
   }
 }
